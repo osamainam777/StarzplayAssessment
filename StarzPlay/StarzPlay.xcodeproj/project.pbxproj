@@ -1,0 +1,791 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		44B63D08042FD6891CF3B9A8 /* Pods_StarzPlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92851D608A3107C71A4FCCC /* Pods_StarzPlay.framework */; };
+		CBE557802BD3B2E7005BA9EE /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE5577F2BD3B2E7005BA9EE /* NetworkManager.swift */; };
+		CBE557832BD3B323005BA9EE /* SeasonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE557822BD3B323005BA9EE /* SeasonModel.swift */; };
+		CBE557862BD3B5FD005BA9EE /* SeasonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE557852BD3B5FD005BA9EE /* SeasonViewModel.swift */; };
+		CBE557882BD3C1ED005BA9EE /* EpisodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE557872BD3C1ED005BA9EE /* EpisodeModel.swift */; };
+		CBE5578A2BD3C1FE005BA9EE /* EpisodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE557892BD3C1FE005BA9EE /* EpisodeViewModel.swift */; };
+		CBE5578D2BD3C3EC005BA9EE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE5578C2BD3C3EC005BA9EE /* Constants.swift */; };
+		CBE557952BD3D092005BA9EE /* StarzPlayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE557942BD3D092005BA9EE /* StarzPlayTests.swift */; };
+		CBE557A22BD3D278005BA9EE /* StarzPlayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE557A12BD3D278005BA9EE /* StarzPlayUITests.swift */; };
+		CBE557A42BD3D278005BA9EE /* StarzPlayUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE557A32BD3D278005BA9EE /* StarzPlayUITestsLaunchTests.swift */; };
+		CBFF211E2BD2882B001C30B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFF211D2BD2882B001C30B1 /* AppDelegate.swift */; };
+		CBFF21202BD2882B001C30B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFF211F2BD2882B001C30B1 /* SceneDelegate.swift */; };
+		CBFF21222BD2882B001C30B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFF21212BD2882B001C30B1 /* ViewController.swift */; };
+		CBFF21252BD2882B001C30B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBFF21232BD2882B001C30B1 /* Main.storyboard */; };
+		CBFF21272BD2882B001C30B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBFF21262BD2882B001C30B1 /* Assets.xcassets */; };
+		CBFF212A2BD2882B001C30B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBFF21282BD2882B001C30B1 /* LaunchScreen.storyboard */; };
+		CBFF21342BD288B7001C30B1 /* TabbarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFF21322BD288B7001C30B1 /* TabbarTableViewCell.swift */; };
+		CBFF21352BD288B7001C30B1 /* TabbarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBFF21332BD288B7001C30B1 /* TabbarTableViewCell.xib */; };
+		CBFF21382BD28C2B001C30B1 /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFF21362BD28C2B001C30B1 /* HeaderTableViewCell.swift */; };
+		CBFF21392BD28C2B001C30B1 /* HeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBFF21372BD28C2B001C30B1 /* HeaderTableViewCell.xib */; };
+		CBFF213F2BD28FC8001C30B1 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFF213D2BD28FC8001C30B1 /* ListViewController.swift */; };
+		CBFF21402BD28FC8001C30B1 /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBFF213E2BD28FC8001C30B1 /* ListViewController.xib */; };
+		CBFF21482BD2906E001C30B1 /* EpTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFF21462BD2906E001C30B1 /* EpTableViewCell.swift */; };
+		CBFF21492BD2906E001C30B1 /* EpTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBFF21472BD2906E001C30B1 /* EpTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CBE557962BD3D092005BA9EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBFF21122BD2882B001C30B1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBFF21192BD2882B001C30B1;
+			remoteInfo = StarzPlay;
+		};
+		CBE557A52BD3D278005BA9EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBFF21122BD2882B001C30B1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBFF21192BD2882B001C30B1;
+			remoteInfo = StarzPlay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A92851D608A3107C71A4FCCC /* Pods_StarzPlay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StarzPlay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4C4F37902F277B2630DE690 /* Pods-StarzPlay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarzPlay.debug.xcconfig"; path = "Target Support Files/Pods-StarzPlay/Pods-StarzPlay.debug.xcconfig"; sourceTree = "<group>"; };
+		C3C2D699428B51759208383A /* Pods-StarzPlay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarzPlay.release.xcconfig"; path = "Target Support Files/Pods-StarzPlay/Pods-StarzPlay.release.xcconfig"; sourceTree = "<group>"; };
+		CBE5577F2BD3B2E7005BA9EE /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		CBE557822BD3B323005BA9EE /* SeasonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonModel.swift; sourceTree = "<group>"; };
+		CBE557852BD3B5FD005BA9EE /* SeasonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonViewModel.swift; sourceTree = "<group>"; };
+		CBE557872BD3C1ED005BA9EE /* EpisodeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeModel.swift; sourceTree = "<group>"; };
+		CBE557892BD3C1FE005BA9EE /* EpisodeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeViewModel.swift; sourceTree = "<group>"; };
+		CBE5578C2BD3C3EC005BA9EE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CBE557922BD3D092005BA9EE /* StarzPlayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarzPlayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBE557942BD3D092005BA9EE /* StarzPlayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarzPlayTests.swift; sourceTree = "<group>"; };
+		CBE5579F2BD3D277005BA9EE /* StarzPlayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarzPlayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBE557A12BD3D278005BA9EE /* StarzPlayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarzPlayUITests.swift; sourceTree = "<group>"; };
+		CBE557A32BD3D278005BA9EE /* StarzPlayUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarzPlayUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CBFF211A2BD2882B001C30B1 /* StarzPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarzPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBFF211D2BD2882B001C30B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CBFF211F2BD2882B001C30B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CBFF21212BD2882B001C30B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CBFF21242BD2882B001C30B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CBFF21262BD2882B001C30B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CBFF21292BD2882B001C30B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CBFF212B2BD2882B001C30B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBFF21322BD288B7001C30B1 /* TabbarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarTableViewCell.swift; sourceTree = "<group>"; };
+		CBFF21332BD288B7001C30B1 /* TabbarTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabbarTableViewCell.xib; sourceTree = "<group>"; };
+		CBFF21362BD28C2B001C30B1 /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCell.swift; sourceTree = "<group>"; };
+		CBFF21372BD28C2B001C30B1 /* HeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderTableViewCell.xib; sourceTree = "<group>"; };
+		CBFF213D2BD28FC8001C30B1 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		CBFF213E2BD28FC8001C30B1 /* ListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListViewController.xib; sourceTree = "<group>"; };
+		CBFF21462BD2906E001C30B1 /* EpTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpTableViewCell.swift; sourceTree = "<group>"; };
+		CBFF21472BD2906E001C30B1 /* EpTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EpTableViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CBE5578F2BD3D092005BA9EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBE5579C2BD3D277005BA9EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBFF21172BD2882B001C30B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44B63D08042FD6891CF3B9A8 /* Pods_StarzPlay.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		175929AA0F0730C8797E69D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A92851D608A3107C71A4FCCC /* Pods_StarzPlay.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4A47219B5BD74127F5769064 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B4C4F37902F277B2630DE690 /* Pods-StarzPlay.debug.xcconfig */,
+				C3C2D699428B51759208383A /* Pods-StarzPlay.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CBE557702BD3B050005BA9EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CBE5577E2BD3B2DB005BA9EE /* Network */,
+				CBE557822BD3B323005BA9EE /* SeasonModel.swift */,
+				CBE557872BD3C1ED005BA9EE /* EpisodeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CBE5577E2BD3B2DB005BA9EE /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				CBE5577F2BD3B2E7005BA9EE /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		CBE557842BD3B5EA005BA9EE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CBE557852BD3B5FD005BA9EE /* SeasonViewModel.swift */,
+				CBE557892BD3C1FE005BA9EE /* EpisodeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CBE5578B2BD3C3D8005BA9EE /* Constants-Helper */ = {
+			isa = PBXGroup;
+			children = (
+				CBE5578C2BD3C3EC005BA9EE /* Constants.swift */,
+			);
+			path = "Constants-Helper";
+			sourceTree = "<group>";
+		};
+		CBE557932BD3D092005BA9EE /* StarzPlayTests */ = {
+			isa = PBXGroup;
+			children = (
+				CBE557942BD3D092005BA9EE /* StarzPlayTests.swift */,
+			);
+			path = StarzPlayTests;
+			sourceTree = "<group>";
+		};
+		CBE557A02BD3D278005BA9EE /* StarzPlayUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CBE557A12BD3D278005BA9EE /* StarzPlayUITests.swift */,
+				CBE557A32BD3D278005BA9EE /* StarzPlayUITestsLaunchTests.swift */,
+			);
+			path = StarzPlayUITests;
+			sourceTree = "<group>";
+		};
+		CBFF21112BD2882B001C30B1 = {
+			isa = PBXGroup;
+			children = (
+				CBFF211C2BD2882B001C30B1 /* StarzPlay */,
+				CBE557932BD3D092005BA9EE /* StarzPlayTests */,
+				CBE557A02BD3D278005BA9EE /* StarzPlayUITests */,
+				CBFF211B2BD2882B001C30B1 /* Products */,
+				4A47219B5BD74127F5769064 /* Pods */,
+				175929AA0F0730C8797E69D4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CBFF211B2BD2882B001C30B1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CBFF211A2BD2882B001C30B1 /* StarzPlay.app */,
+				CBE557922BD3D092005BA9EE /* StarzPlayTests.xctest */,
+				CBE5579F2BD3D277005BA9EE /* StarzPlayUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CBFF211C2BD2882B001C30B1 /* StarzPlay */ = {
+			isa = PBXGroup;
+			children = (
+				CBE5578B2BD3C3D8005BA9EE /* Constants-Helper */,
+				CBE557842BD3B5EA005BA9EE /* ViewModel */,
+				CBE557702BD3B050005BA9EE /* Model */,
+				CBFF213A2BD28F84001C30B1 /* View */,
+				CBFF211D2BD2882B001C30B1 /* AppDelegate.swift */,
+				CBFF211F2BD2882B001C30B1 /* SceneDelegate.swift */,
+				CBFF21212BD2882B001C30B1 /* ViewController.swift */,
+				CBFF21232BD2882B001C30B1 /* Main.storyboard */,
+				CBFF21262BD2882B001C30B1 /* Assets.xcassets */,
+				CBFF21282BD2882B001C30B1 /* LaunchScreen.storyboard */,
+				CBFF212B2BD2882B001C30B1 /* Info.plist */,
+			);
+			path = StarzPlay;
+			sourceTree = "<group>";
+		};
+		CBFF21312BD288A1001C30B1 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CBFF21322BD288B7001C30B1 /* TabbarTableViewCell.swift */,
+				CBFF21332BD288B7001C30B1 /* TabbarTableViewCell.xib */,
+				CBFF21362BD28C2B001C30B1 /* HeaderTableViewCell.swift */,
+				CBFF21372BD28C2B001C30B1 /* HeaderTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		CBFF213A2BD28F84001C30B1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CBFF213C2BD28FAD001C30B1 /* ListViewController */,
+				CBFF213B2BD28F89001C30B1 /* ViewController */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CBFF213B2BD28F89001C30B1 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CBFF21312BD288A1001C30B1 /* Cells */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CBFF213C2BD28FAD001C30B1 /* ListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CBFF21412BD29001001C30B1 /* Cell */,
+				CBFF213D2BD28FC8001C30B1 /* ListViewController.swift */,
+				CBFF213E2BD28FC8001C30B1 /* ListViewController.xib */,
+			);
+			path = ListViewController;
+			sourceTree = "<group>";
+		};
+		CBFF21412BD29001001C30B1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CBFF21462BD2906E001C30B1 /* EpTableViewCell.swift */,
+				CBFF21472BD2906E001C30B1 /* EpTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CBE557912BD3D092005BA9EE /* StarzPlayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBE557982BD3D092005BA9EE /* Build configuration list for PBXNativeTarget "StarzPlayTests" */;
+			buildPhases = (
+				CBE5578E2BD3D092005BA9EE /* Sources */,
+				CBE5578F2BD3D092005BA9EE /* Frameworks */,
+				CBE557902BD3D092005BA9EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBE557972BD3D092005BA9EE /* PBXTargetDependency */,
+			);
+			name = StarzPlayTests;
+			productName = StarzPlayTests;
+			productReference = CBE557922BD3D092005BA9EE /* StarzPlayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CBE5579E2BD3D277005BA9EE /* StarzPlayUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBE557A72BD3D278005BA9EE /* Build configuration list for PBXNativeTarget "StarzPlayUITests" */;
+			buildPhases = (
+				CBE5579B2BD3D277005BA9EE /* Sources */,
+				CBE5579C2BD3D277005BA9EE /* Frameworks */,
+				CBE5579D2BD3D277005BA9EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBE557A62BD3D278005BA9EE /* PBXTargetDependency */,
+			);
+			name = StarzPlayUITests;
+			productName = StarzPlayUITests;
+			productReference = CBE5579F2BD3D277005BA9EE /* StarzPlayUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		CBFF21192BD2882B001C30B1 /* StarzPlay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBFF212E2BD2882B001C30B1 /* Build configuration list for PBXNativeTarget "StarzPlay" */;
+			buildPhases = (
+				26D932F7B1D71C932EB78299 /* [CP] Check Pods Manifest.lock */,
+				CBFF21162BD2882B001C30B1 /* Sources */,
+				CBFF21172BD2882B001C30B1 /* Frameworks */,
+				CBFF21182BD2882B001C30B1 /* Resources */,
+				2EB82D9059225EA42AA8CE02 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StarzPlay;
+			productName = StarzPlay;
+			productReference = CBFF211A2BD2882B001C30B1 /* StarzPlay.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CBFF21122BD2882B001C30B1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					CBE557912BD3D092005BA9EE = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = CBFF21192BD2882B001C30B1;
+					};
+					CBE5579E2BD3D277005BA9EE = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = CBFF21192BD2882B001C30B1;
+					};
+					CBFF21192BD2882B001C30B1 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = CBFF21152BD2882B001C30B1 /* Build configuration list for PBXProject "StarzPlay" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CBFF21112BD2882B001C30B1;
+			productRefGroup = CBFF211B2BD2882B001C30B1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CBFF21192BD2882B001C30B1 /* StarzPlay */,
+				CBE557912BD3D092005BA9EE /* StarzPlayTests */,
+				CBE5579E2BD3D277005BA9EE /* StarzPlayUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CBE557902BD3D092005BA9EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBE5579D2BD3D277005BA9EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBFF21182BD2882B001C30B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBFF212A2BD2882B001C30B1 /* LaunchScreen.storyboard in Resources */,
+				CBFF21492BD2906E001C30B1 /* EpTableViewCell.xib in Resources */,
+				CBFF21272BD2882B001C30B1 /* Assets.xcassets in Resources */,
+				CBFF21402BD28FC8001C30B1 /* ListViewController.xib in Resources */,
+				CBFF21252BD2882B001C30B1 /* Main.storyboard in Resources */,
+				CBFF21392BD28C2B001C30B1 /* HeaderTableViewCell.xib in Resources */,
+				CBFF21352BD288B7001C30B1 /* TabbarTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		26D932F7B1D71C932EB78299 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StarzPlay-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2EB82D9059225EA42AA8CE02 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StarzPlay/Pods-StarzPlay-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StarzPlay/Pods-StarzPlay-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StarzPlay/Pods-StarzPlay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CBE5578E2BD3D092005BA9EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBE557952BD3D092005BA9EE /* StarzPlayTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBE5579B2BD3D277005BA9EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBE557A22BD3D278005BA9EE /* StarzPlayUITests.swift in Sources */,
+				CBE557A42BD3D278005BA9EE /* StarzPlayUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBFF21162BD2882B001C30B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBE557862BD3B5FD005BA9EE /* SeasonViewModel.swift in Sources */,
+				CBFF21222BD2882B001C30B1 /* ViewController.swift in Sources */,
+				CBFF21382BD28C2B001C30B1 /* HeaderTableViewCell.swift in Sources */,
+				CBFF213F2BD28FC8001C30B1 /* ListViewController.swift in Sources */,
+				CBFF211E2BD2882B001C30B1 /* AppDelegate.swift in Sources */,
+				CBE557882BD3C1ED005BA9EE /* EpisodeModel.swift in Sources */,
+				CBE557802BD3B2E7005BA9EE /* NetworkManager.swift in Sources */,
+				CBE5578D2BD3C3EC005BA9EE /* Constants.swift in Sources */,
+				CBE557832BD3B323005BA9EE /* SeasonModel.swift in Sources */,
+				CBFF21202BD2882B001C30B1 /* SceneDelegate.swift in Sources */,
+				CBFF21482BD2906E001C30B1 /* EpTableViewCell.swift in Sources */,
+				CBE5578A2BD3C1FE005BA9EE /* EpisodeViewModel.swift in Sources */,
+				CBFF21342BD288B7001C30B1 /* TabbarTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CBE557972BD3D092005BA9EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBFF21192BD2882B001C30B1 /* StarzPlay */;
+			targetProxy = CBE557962BD3D092005BA9EE /* PBXContainerItemProxy */;
+		};
+		CBE557A62BD3D278005BA9EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBFF21192BD2882B001C30B1 /* StarzPlay */;
+			targetProxy = CBE557A52BD3D278005BA9EE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CBFF21232BD2882B001C30B1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBFF21242BD2882B001C30B1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CBFF21282BD2882B001C30B1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBFF21292BD2882B001C30B1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CBE557992BD3D092005BA9EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.usama.StarzPlayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StarzPlay.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StarzPlay";
+			};
+			name = Debug;
+		};
+		CBE5579A2BD3D092005BA9EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.usama.StarzPlayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StarzPlay.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StarzPlay";
+			};
+			name = Release;
+		};
+		CBE557A82BD3D278005BA9EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.usama.StarzPlayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StarzPlay;
+			};
+			name = Debug;
+		};
+		CBE557A92BD3D278005BA9EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.usama.StarzPlayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StarzPlay;
+			};
+			name = Release;
+		};
+		CBFF212C2BD2882B001C30B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CBFF212D2BD2882B001C30B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CBFF212F2BD2882B001C30B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4C4F37902F277B2630DE690 /* Pods-StarzPlay.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StarzPlay/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.usama.StarzPlay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CBFF21302BD2882B001C30B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3C2D699428B51759208383A /* Pods-StarzPlay.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StarzPlay/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.usama.StarzPlay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CBE557982BD3D092005BA9EE /* Build configuration list for PBXNativeTarget "StarzPlayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBE557992BD3D092005BA9EE /* Debug */,
+				CBE5579A2BD3D092005BA9EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBE557A72BD3D278005BA9EE /* Build configuration list for PBXNativeTarget "StarzPlayUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBE557A82BD3D278005BA9EE /* Debug */,
+				CBE557A92BD3D278005BA9EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBFF21152BD2882B001C30B1 /* Build configuration list for PBXProject "StarzPlay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBFF212C2BD2882B001C30B1 /* Debug */,
+				CBFF212D2BD2882B001C30B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBFF212E2BD2882B001C30B1 /* Build configuration list for PBXNativeTarget "StarzPlay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBFF212F2BD2882B001C30B1 /* Debug */,
+				CBFF21302BD2882B001C30B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CBFF21122BD2882B001C30B1 /* Project object */;
+}
