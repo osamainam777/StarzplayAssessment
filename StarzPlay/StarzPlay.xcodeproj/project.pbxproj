@@ -209,7 +209,6 @@
 				CBFF213A2BD28F84001C30B1 /* View */,
 				CBFF211D2BD2882B001C30B1 /* AppDelegate.swift */,
 				CBFF211F2BD2882B001C30B1 /* SceneDelegate.swift */,
-				CBFF21212BD2882B001C30B1 /* ViewController.swift */,
 				CBFF21232BD2882B001C30B1 /* Main.storyboard */,
 				CBFF21262BD2882B001C30B1 /* Assets.xcassets */,
 				CBFF21282BD2882B001C30B1 /* LaunchScreen.storyboard */,
@@ -241,6 +240,7 @@
 		CBFF213B2BD28F89001C30B1 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				CBFF21212BD2882B001C30B1 /* ViewController.swift */,
 				CBFF21312BD288A1001C30B1 /* Cells */,
 			);
 			path = ViewController;
